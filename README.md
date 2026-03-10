@@ -45,7 +45,7 @@ The ISLA Gaia Library System is a full-featured web application that digitizes a
 - **Reports** — Generate reports on loans, reservations, and library activity
 
 ### System-wide
-- **Multi-language Support** — Full interface in Portuguese, English, and French
+- **Multi-language Support** — Full interface in Portuguese, English, Spanish, and French
 - **Email Notifications** — Automated emails for loan confirmations, overdue reminders, and reservation availability
 - **Scheduled Tasks** — Automated cron jobs for overdue detection and reservation expiry
 - **LDAP Integration** — Institutional authentication support
@@ -120,29 +120,13 @@ The system enforces three distinct roles with scoped permissions:
 
 ---
 
-## API Highlights
-
-The backend exposes a RESTful API with the following main resource groups:
-
-- `POST /api/auth/login` — Authenticate and receive a JWT token
-- `GET /api/books` — Search and filter the catalogue (paginated)
-- `GET /api/books/:id` — Full book details with availability
-- `POST /api/loans` — Create a loan *(Librarian/Admin)*
-- `GET /api/loans/my-loans` — Current user's active loans
-- `POST /api/reservations` — Reserve a book
-- `GET /api/reports` — Library activity reports *(Admin)*
-- `GET /api/admin/audit-logs` — System audit trail *(Admin)*
-
-All endpoints return standard JSON responses with consistent error formatting and HTTP status codes.
-
----
-
 ## Internationalization
 
 The full interface is available in three languages, switchable at runtime without a page reload:
 
 - 🇵🇹 **Portuguese** (default)
 - 🇬🇧 **English**
+- 🇪🇸 **Spanish**
 - 🇫🇷 **French**
 
 ---
@@ -154,5 +138,5 @@ The system is actively deployed and in production use at [biblioteca-islagaia.pt
 ---
 
 <div align="center">
-  Built by <a href="https://github.com/DFRSfx">Dário Soares</a> · ISLA Gaia · 2024–2025
+  Built by <a href="https://github.com/DFRSfx">Dário Soares</a> · ISLA Gaia · 2025–2026
 </div>
